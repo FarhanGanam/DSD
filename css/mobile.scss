@@ -1,0 +1,305 @@
+@import 'variables';
+
+
+
+// header
+
+header {
+  position: sticky;
+  top: 0;
+  background: $light-text;
+  z-index: 2;
+
+  #head {
+    overflow-x: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding-right: 0px;
+
+    .fa-bars {
+      display: block;
+      color: $primary;
+    }
+
+    .logo img {
+      width: 130px;
+      position: relative;
+      left: -120px;
+    }
+
+    .contact {
+      display: none;
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  background: rgba($light-text, 0.9);
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+
+  .container {
+    flex-direction: column;
+    padding-left: 0px;
+    width: 300px;
+
+    .close {
+      display: block;
+      color: $primary;
+      position: relative;
+      left: 250px;
+      width: 50px;
+    }
+
+    .pages {
+
+      position: relative;
+      width: 300px;
+      height: 100vh;
+      overflow-y: scroll;
+
+      > .main li {
+        border-right: none;
+      }
+
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          display: block;
+          width: 300px;
+          border-bottom: 0.3px dotted $gray;
+          font-weight: 500;
+          padding: 20px 10px;
+
+          > a {
+            border-right: none;
+            font-size: $size18;
+          }
+
+          > i {
+            position: relative;
+            left: 170px;
+          }
+        }
+      }
+
+      .menu-open {
+
+        a {
+          font-size: $size18;
+        }
+
+        i {
+          position: relative;
+          left: 120px;
+        }
+      }
+
+      .dropdown {
+        height: 59px;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .dropdown.open {
+        height: inherit;
+      }
+
+      .menu1 {
+        visibility: visible;
+        width: 300px;
+        opacity: 1;
+        z-index: -1;
+        position: relative;
+        top: 10px;
+        transition: all 0.5s ease-in-out 1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+        ul {
+          padding-left: 10px;
+
+          li {
+            padding: 10px;
+            border-bottom: 0.3px dotted $gray;
+          }
+        }
+
+        .fa-chevron-right {
+          position: relative;
+          left: -20px;
+          font-size: $size12;
+          padding: 4px 0px;
+          float: right;
+        }
+
+        > ul li a {
+          font-size: $size15;
+
+        }
+
+        .sub-menu {
+          visibility: visible;
+          color: initial;
+          opacity: 1;
+          position: relative;
+          width: 100%;
+          z-index: -1;
+          margin-top: 5px;
+          margin-left: 0px;
+          transition: all 0.5s ease-in-out 0s, visibility 0s linear 0s, z-index 0s linear 0.01s;
+        }
+
+        .hover:hover .sub-menu {
+          background: none;
+        }
+
+        .hover {
+          height: 35px;
+          overflow: hidden;
+        }
+
+        .hover.open {
+          height: inherit;
+        }
+      }
+      }
+
+      .social a {
+        display: block;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  nav.slide {
+    left: 0px;
+  }
+
+  //  Showcase
+
+  #showcase {
+
+    .content {
+      .text {
+        width: 95%;
+      }
+    }
+  }
+
+  // Contact Us Panel
+
+  #panel {
+
+    padding-bottom: 30px;
+
+    .content {
+      flex-direction: column;
+
+      h2 {
+        width: 300px;
+        padding-bottom: 20px;
+      }
+
+      .btn a {
+        padding: 15px 70px;
+      }
+    }
+  }
+
+  // Who are we Panel
+
+#choose-us {
+
+  .content {
+
+    .container {
+      grid-template-columns: none;
+      grid-template-rows: 0.5fr 1fr;
+      grid-gap: 0px;
+      margin-bottom: 20px;
+      width: 350px;
+      margin: 0 auto;
+
+      .img {
+        text-align: center;
+        img {
+          height: 90%;
+          width: 90%;
+        }
+      }
+
+      .description {
+        margin-bottom: 20px;
+      }
+      .right {
+        transform: translateX(-150px);
+      }
+    }
+
+    .bottom-content {
+      padding: 30px 10px;
+
+      .wrapper {
+        display: block;
+
+        p {
+          margin-bottom: 50px;
+        }
+
+        .btn {
+          text-align: center;
+        
+        a{
+          padding: 15px 50px;
+
+        }
+
+          i {
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Why Choose Us Panel
+
+#main {
+
+  .container {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+
+
+    .mid-img {
+
+      text-align: center;
+      padding: 20px 0;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    .row {
+      grid-template-columns: none;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 20px;
+      width: 320px;
+      margin: 0 auto;
+
+      .right {
+        transform: translateX(-150px);
+      }
+    }
+  }
+} 

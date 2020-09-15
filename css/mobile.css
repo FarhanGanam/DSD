@@ -1,0 +1,300 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+header #head {
+  overflow-x: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  padding-right: 0px;
+}
+
+header #head .fa-bars {
+  display: block;
+  color: #0036A3;
+}
+
+header #head .logo img {
+  width: 130px;
+  position: relative;
+  left: -120px;
+}
+
+header #head .contact {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0px;
+  width: 300px;
+}
+
+nav .container .close {
+  display: block;
+  color: #0036A3;
+  position: relative;
+  left: 250px;
+  width: 50px;
+}
+
+nav .container .pages {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+nav .container .pages > .main li {
+  border-right: none;
+}
+
+nav .container .pages ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+nav .container .pages ul li {
+  display: block;
+  width: 300px;
+  border-bottom: 0.3px dotted #636363;
+  font-weight: 500;
+  padding: 20px 10px;
+}
+
+nav .container .pages ul li > a {
+  border-right: none;
+  font-size: 18px;
+}
+
+nav .container .pages ul li > i {
+  position: relative;
+  left: 170px;
+}
+
+nav .container .pages .menu-open a {
+  font-size: 18px;
+}
+
+nav .container .pages .menu-open i {
+  position: relative;
+  left: 120px;
+}
+
+nav .container .pages .dropdown {
+  height: 59px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .container .pages .dropdown.open {
+  height: inherit;
+}
+
+nav .container .pages .menu1 {
+  visibility: visible;
+  width: 300px;
+  opacity: 1;
+  z-index: -1;
+  position: relative;
+  top: 10px;
+  -webkit-transition: all 0.5s ease-in-out 1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  transition: all 0.5s ease-in-out 1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+nav .container .pages .menu1 ul {
+  padding-left: 10px;
+}
+
+nav .container .pages .menu1 ul li {
+  padding: 10px;
+  border-bottom: 0.3px dotted #636363;
+}
+
+nav .container .pages .menu1 .fa-chevron-right {
+  position: relative;
+  left: -20px;
+  font-size: 12px;
+  padding: 4px 0px;
+  float: right;
+}
+
+nav .container .pages .menu1 > ul li a {
+  font-size: 15px;
+}
+
+nav .container .pages .menu1 .sub-menu {
+  visibility: visible;
+  color: initial;
+  opacity: 1;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  margin-top: 5px;
+  margin-left: 0px;
+  -webkit-transition: all 0.5s ease-in-out 0s, visibility 0s linear 0s, z-index 0s linear 0.01s;
+  transition: all 0.5s ease-in-out 0s, visibility 0s linear 0s, z-index 0s linear 0.01s;
+}
+
+nav .container .pages .menu1 .hover:hover .sub-menu {
+  background: none;
+}
+
+nav .container .pages .menu1 .hover {
+  height: 35px;
+  overflow: hidden;
+}
+
+nav .container .pages .menu1 .hover.open {
+  height: inherit;
+}
+
+nav .container .social a {
+  display: block;
+  margin-top: 20px;
+}
+
+nav.slide {
+  left: 0px;
+}
+
+#showcase .content .text {
+  width: 95%;
+}
+
+#panel {
+  padding-bottom: 30px;
+}
+
+#panel .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#panel .content h2 {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+#panel .content .btn a {
+  padding: 15px 70px;
+}
+
+#choose-us .content .container {
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  -ms-grid-rows: 0.5fr 1fr;
+      grid-template-rows: 0.5fr 1fr;
+  grid-gap: 0px;
+  margin-bottom: 20px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+#choose-us .content .container .img {
+  text-align: center;
+}
+
+#choose-us .content .container .img img {
+  height: 90%;
+  width: 90%;
+}
+
+#choose-us .content .container .description {
+  margin-bottom: 20px;
+}
+
+#choose-us .content .container .right {
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+#choose-us .content .bottom-content {
+  padding: 30px 10px;
+}
+
+#choose-us .content .bottom-content .wrapper {
+  display: block;
+}
+
+#choose-us .content .bottom-content .wrapper p {
+  margin-bottom: 50px;
+}
+
+#choose-us .content .bottom-content .wrapper .btn {
+  text-align: center;
+}
+
+#choose-us .content .bottom-content .wrapper .btn a {
+  padding: 15px 50px;
+}
+
+#choose-us .content .bottom-content .wrapper .btn i {
+  left: 10px;
+}
+
+#main .container {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+}
+
+#main .container .mid-img {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#main .container .mid-img img {
+  width: 200px;
+}
+
+#main .container .row {
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+#main .container .row .right {
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+/*# sourceMappingURL=mobile.css.map */

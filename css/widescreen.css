@@ -1,0 +1,139 @@
+header #head {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+}
+
+header #head .logo img {
+  width: 150px;
+  padding-bottom: 10px;
+}
+
+header #head .contact ul li {
+  font-size: 12px;
+}
+
+header #head .contact ul li:first-child {
+  font-size: 18px;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  overflow: hidden;
+  top: 0;
+}
+
+nav .container {
+  width: 100vw;
+  padding-right: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .container .pages ul li a {
+  font-size: 12px;
+}
+
+nav .social a {
+  font-size: 18px;
+}
+
+#showcase .content .text {
+  width: 75%;
+}
+
+#panel {
+  height: 120px;
+}
+
+#panel .content h2 {
+  width: 400px;
+}
+
+#panel .content .btn a {
+  padding: 15px 50px;
+}
+
+#panel .content .btn a i {
+  right: -20px;
+}
+
+#choose-us .content .container {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#choose-us .content .container .img {
+  text-align: center;
+}
+
+#choose-us .content .container .img img {
+  width: 70%;
+}
+
+#choose-us .content .container .description .text {
+  text-align: center;
+  margin: 0 30px;
+}
+
+#choose-us .content .container .right {
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+#choose-us .content .bottom-content {
+  padding-bottom: 30px;
+}
+
+#choose-us .content .bottom-content .wrapper {
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#choose-us .content .bottom-content .wrapper p {
+  margin: 0 20px;
+  text-align: center;
+}
+
+#choose-us .content .bottom-content .wrapper .btn {
+  text-align: center;
+}
+
+#main .container {
+  display: block;
+  width: 720px;
+  margin: 0 auto;
+}
+
+#main .container .mid-img {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#main .container .row {
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+#main .container .row .right {
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+/*# sourceMappingURL=widescreen.css.map */

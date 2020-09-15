@@ -1,0 +1,163 @@
+@import 'variables';
+
+
+header {
+
+  #head {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+
+    .logo img {
+      width: 150px;
+      padding-bottom: 10px;
+    }
+
+    .contact ul li {
+      font-size: $size12;
+    }
+
+    .contact ul li:first-child {
+      font-size: $size18;
+    }
+  }
+}
+
+nav {
+
+  position: sticky;
+  z-index: 2;
+  overflow: hidden;
+  top: 0;
+
+  .container {
+    width: 100vw;
+    padding-right: 0px;
+    justify-content: space-around;
+
+    .pages {
+  
+      ul li a {
+        font-size: $size12;
+      }
+    }
+  }
+  .social a {
+    font-size: $size18;
+  }
+}
+
+ //  Showcase
+
+ #showcase {
+
+  .content {
+    .text {
+      width: 75%;
+    }
+  }
+}
+
+ // Contact Us Panel
+
+ #panel {
+
+  height: 120px;
+
+  .content {
+
+    h2 {
+      width: 400px;
+    }
+
+    .btn a {
+      padding: 15px 50px;
+
+      i {
+        right: -20px;
+      }
+    }
+  }
+}
+
+ // Who are we Panel
+
+ #choose-us {
+
+  .content {
+
+    .container {
+      display: block;
+      margin-bottom: 30px;
+
+      .img {
+        text-align: center;
+      
+        img {
+          width: 70%;
+        }
+      }
+
+      .description {
+
+        .text {
+          text-align: center;
+          margin: 0 30px;
+        }
+      }
+
+      .right {
+        transform: translateX(-150px);
+      }
+    }
+
+    .bottom-content {
+      padding-bottom: 30px;
+
+      .wrapper {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+
+        p {
+          margin: 0 20px;
+          text-align: center;
+        }
+
+        .btn {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// Why Choose Us Panel
+
+#main {
+
+  .container {
+    display: block;
+    width: 720px;
+    margin: 0 auto;
+
+
+    .mid-img {
+
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .row {
+      grid-template-columns: none;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 50px;
+
+      .right {
+        transform: translateX(-150px);
+      }
+    }
+  }
+} 
